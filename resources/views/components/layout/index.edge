@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Katchau</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="{{ asset('resources/assets/img/logo.png')}}">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+  @vite([
+    'resources/assets/css/all.min.css',
+    'resources/assets/bootstrap/css/bootstrap.min.css',
+    'resources/assets/css/owl.carousel.css',
+    'resources/assets/css/magnific-popup.css',
+    'resources/assets/css/animate.css',
+    'resources/assets/css/meanmenu.min.css',
+    'resources/assets/css/main.css',
+    'resources/assets/css/responsive.css'
+  ])
+
+</head>
+<body>
+
+<nav>
+  @include('partials/_navbar')
+</nav>
+	<!-- hero area -->
+	<div class="hero-area hero-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 offset-lg-2 text-center">
+					<div class="hero-text">
+						<div class="hero-text-tablecell">
+							<p class="subtitle">Seu PC, seu jeito</p>
+							<h1>A evolução do seu setup</h1>
+							<div class="hero-btns">
+								<a href="shop.html" class="boxed-btn">Colecao</a>
+								<a href="contact.html" class="bordered-btn">Contato</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end hero area -->
+
+	<!-- features list section -->
+	<div class="list-section pt-80 pb-80">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-shipping-fast"></i>
+						</div>
+						<div class="content">
+							<h3>Entrega rapida</h3>
+							<p>Quando encomendar acima de R$75</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-phone-volume"></i>
+						</div>
+						<div class="content">
+							<h3>24/7 Suporte</h3>
+							<p>Suporte durante todo dia</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="list-box d-flex justify-content-start align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-sync"></i>
+						</div>
+						<div class="content">
+							<h3>Reembolso</h3>
+							<p>Receba reembolso em 3 dias!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- end features list section -->
+	<!-- product section -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3><span class="orange-text">Favoritos</span> da galera</h3>
+						<p>Os produtos mais bem avaliados e vendidos do nosso site! </p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{{ asset('resources/assets/img/products/product-img-1.jpg')}}" alt=""></a>
+						</div>
+						<h3>Teclado Kumara Pro</h3>
+						<p class="product-price"><span>RGB</span> R$ 259,99 </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar ao Carrrinho</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{{ asset('resources/assets/img/products/product-img-2.jpg')}}" alt=""></a>
+						</div>
+						<h3>Mouse Redragon Cobra</h3>
+						<p class="product-price"><span>Chroma RGB</span> R$ 99,90 </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar ao Carrrinho</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{{ asset('resources/assets/img/products/product-img-3.jpg')}}" alt=""></a>
+						</div>
+						<h3>Monitor Gamer</h3>
+						<p class="product-price"><span>31.5" - 170Hz</span> R$ 1819,99 </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar ao Carrrinho</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end product section -->
+
+	<!-- cart banner section -->
+	<section class="cart-banner pt-100 pb-100">
+    	<div class="container">
+        	<div class="row clearfix">
+            	<!--Image Column-->
+            	<div class="image-column col-lg-6">
+                	<div class="image">
+                    	<div class="price-box">
+                        	<div class="inner-price">
+                                <span class="price">
+                                    <strong>30%</strong> <br> off
+                                </span>
+                            </div>
+                        </div>
+                    	<img src="{{ asset('resources/assets/img/a.png')}}"  width="800px" alt="">
+                    </div>
+                </div>
+                <!--Content Column-->
+                <div class="content-column col-lg-6">
+					<h3><span class="orange-text">Lancamento</span> do mes</h3>
+                    <h4>Nova linha Razer</h4>
+                    <div class="text">Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant</div>
+                    <!--Countdown Timer-->
+                    <div class="time-counter"><div class="time-countdown clearfix" data-countdown="2020/2/01"><div class="counter-column"><div class="inner"><span class="count">00</span>Days</div></div> <div class="counter-column"><div class="inner"><span class="count">00</span>Hours</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Mins</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Secs</div></div></div></div>
+                	<a href="cart.html" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> Adiconar ao carrinho</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end cart banner section -->
+
+	<br> <br>
+
+	<!-- advertisement section -->
+	<div class="abt-section mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<div class="abt-bg">
+						<a href="https://www.youtube.com/watch?v=EerI8DPogkE" class="video-play-btn popup-youtube"><i class="fas fa-play"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="abt-text">
+						<p class="top-sub">Desde 1999</p>
+						<h2>Nos somos a <span class="orange-text">Katchau</span></h2>
+						<p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.</p>
+						<a href="about.html" class="boxed-btn mt-4">Saiba mais</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end advertisement section -->
+
+	<!-- shop banner -->
+	<section class="shop-banner">
+    	<div class="container ">
+        	<h3>Produtos Logitech! <br> Com grande <span class="orange-text">Desconto...</span></h3>
+            <div class="sale-percent">50% <span>off</span></div>
+            <a href="shop.html" class="cart-btn btn-lg">Compre agora</a>
+        </div>
+    </section>
+	<!-- end shop banner -->
+
+  <div>
+    @include('partials/_carousellogo')
+  </div>
+
+	<footer>
+    @include('partials/_footer')
+  </footer>
+
+  <script src="{{ asset('js/jquery-1.11.3.min.js')}}"></script>
+  <script src="{{ asset('bootstrap/js/bootstrap.min.js')}}"></script>
+  <script src="{{ asset('js/jquery.countdown.js')}}"></script>
+  <script src="{{ asset('js/jquery.isotope-3.0.6.min.js')}}"></script>
+  <script src="{{ asset('js/waypoints.js')}}"></script>
+  <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+  <script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{ asset('js/jquery.meanmenu.min.js')}}"></script>
+  <script src="{{ asset('js/main.js')}}"></script>
+</body>
+</html>
