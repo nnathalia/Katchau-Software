@@ -38,8 +38,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Fresh and Organic</p>
-						<h1>Cart</h1>
+						<p>Seu PC, seu jeito</p>
+						<h1>Carrinho</h1>
 					</div>
 				</div>
 			</div>
@@ -57,10 +57,10 @@
 							<thead class="cart-table-head">
 								<tr class="table-head-row">
 									<th class="product-remove"></th>
-									<th class="product-image">Product Image</th>
-									<th class="product-name">Name</th>
-									<th class="product-price">Price</th>
-									<th class="product-quantity">Quantity</th>
+									<th class="product-image">Produto</th>
+									<th class="product-name">Nome</th>
+									<th class="product-price">Preço</th>
+									<th class="product-quantity">Quantidade</th>
 									<th class="product-total">Total</th>
 								</tr>
 							</thead>
@@ -100,7 +100,7 @@
 							<thead class="total-table-head">
 								<tr class="table-total-row">
 									<th>Total</th>
-									<th>Price</th>
+									<th>Preço</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -109,7 +109,7 @@
 									<td>$500</td>
 								</tr>
 								<tr class="total-data">
-									<td><strong>Shipping: </strong></td>
+									<td><strong>Frete: </strong></td>
 									<td>$45</td>
 								</tr>
 								<tr class="total-data">
@@ -119,17 +119,17 @@
 							</tbody>
 						</table>
 						<div class="cart-buttons">
-							<a href="cart.html" class="boxed-btn">Update Cart</a>
-							<a href="checkout.html" class="boxed-btn black">Check Out</a>
+							<a href="{{route ('cart')}}" class="boxed-btn">Atualizar Carrinho</a>
+							<a href="{{route ('checkout')}}" class="boxed-btn black">Fechar pedido</a>
 						</div>
 					</div>
 
 					<div class="coupon-section">
-						<h3>Apply Coupon</h3>
+						<h3>Aplicar Cupom</h3>
 						<div class="coupon-form-wrap">
-							<form action="index.html">
+							<form action="{{route ('index')}}">
 								<p><input type="text" placeholder="Coupon"></p>
-								<p><input type="submit" value="Apply"></p>
+								<p><input type="submit" value="Aplicar"></p>
 							</form>
 						</div>
 					</div>
