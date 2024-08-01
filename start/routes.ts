@@ -9,7 +9,7 @@
 
 import router from '@adonisjs/core/services/router'
 
-router.on('/').render('components/layout/index')
+router.on('/').render('components/layout/index').as('index')
 router.on('/shop').render('pages/shop').as('shop')
 router.on('/about').render('pages/about').as('about')
 router.on('/contact').render('pages/contact').as('contact')
